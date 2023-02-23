@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="application-name" content="Tarea 5 de DIW" />
+        <meta name="description" content="Unidad 5. Contenido multimedia de la web: Imágenes" />
+        <meta name="keywords" content="html, css, sass, scss, figure" />
+        <meta name="author" content="Donato Ramos Martínez" />
+        <title>Actividad 1</title>
+        <link rel="stylesheet" type="text/css" href="../css/estilosActividad1.css" />
+    </head>
+    <body>
+        <header class="encabezado">
+            <h1 class="encabezado__titulo">Lobos</h1>
+        </header>
+        <main>
+            <section class="contenedor">
+                <!--
+                    Primero tenemos la etiqueta <figure> que va a contener siempre 2 etiquetas: picture y figcaption.
+                    Dentro de la etiqueta <picture> habrá 2 tipos de etiquetas: <source> y <img>
+                -->
+                <figure class="contenedor__elemento-uno">
+                    <picture class="contenedor__imagen">
+                        <source
+                            class="contenedor__tipoImagen contenedor__tipoImagen-superior"
+                            media="(max-width: 320px)"
+                            srcset="../assets/images/gray-wolf-s.jpg"
+                        />
+                        <source
+                            class="contenedor__tipoImagen contenedor__tipoImagen-superior"
+                            media="(max-width: 640px)"
+                            srcset="../assets/images/gray-wolf-m.jpg"
+                        />
+                        <img
+                            class="contenedor__tipoImagen contenedor__tipoImagen-superior"
+                            src="../assets/images/gray-wolf-l.jpg"
+                            alt="El lobo gris"
+                        />
+                    </picture>
+                    <figcaption class="contenedor__nombre contenedor__nombre-superior">El lobo gris</figcaption>
+                </figure>
+                <figure class="contenedor__elemento-dos">
+                    <picture class="contenedor__imagen">
+                        <source
+                            class="contenedor__tipoImagen contenedor__tipoImagen-superior"
+                            media="(max-width: 320px)"
+                            srcset="../assets/images/red-wolf-m.jpg"
+                        />
+                        <source
+                            class="contenedor__tipoImagen contenedor__tipoImagen-superior"
+                            media="(max-width: 640px)"
+                            srcset="../assets/images/red-wolf-m.jpg"
+                        />
+                        <img
+                            class="contenedor__tipoImagen contenedor__tipoImagen-superior"
+                            src="../assets/images/red-wolf-l.jpg"
+                            alt="El lobo rojo"
+                        />
+                    </picture>
+                    <figcaption class="contenedor__nombre contenedor__nombre-superior">El lobo rojo</figcaption>
+                </figure>
+                <figure class="contenedor__elemento-tres">
+                    <picture class="contenedor__imagen">
+                        <source
+                            class="contenedor__tipoImagen contenedor__tipoImagen-superior"
+                            media="(max-width: 320px)"
+                            srcset="../assets/images/arctic-wolf-s.jpg"
+                        />
+                        <source
+                            class="contenedor__tipoImagen contenedor__tipoImagen-superior"
+                            media="(max-width: 640px)"
+                            srcset="../assets/images/arctic-wolf-m.jpg"
+                        />
+                        <img
+                            class="contenedor__tipoImagen contenedor__tipoImagen-superior"
+                            src="../assets/images/arctic-wolf-l.jpg"
+                            alt="El lobo ártico"
+                        />
+                    </picture>
+                    <figcaption class="contenedor__nombre contenedor__nombre-superior">El lobo ártico</figcaption>
+                </figure>
+                <figure class="contenedor__elemento-cuatro">
+                    <picture class="contenedor__imagen">
+                        <source
+                            class="contenedor__tipoImagen contenedor__tipoImagen-superior"
+                            media="(max-width: 320px)"
+                            srcset="../assets/images/ethiopian-wolf-s.jpg"
+                        />
+                        <source
+                            class="contenedor__tipoImagen contenedor__tipoImagen-superior"
+                            media="(max-width: 640px)"
+                            srcset="../assets/images/ethiopian-wolf-m.jpg"
+                        />
+                        <img
+                            class="contenedor__tipoImagen contenedor__tipoImagen-inferior"
+                            src="../assets/images/ethiopian-wolf-l.jpg"
+                            alt="El lobo etíope"
+                        />
+                    </picture>
+                    <figcaption class="contenedor__nombre contenedor__nombre-inferior">El lobo etíope</figcaption>
+                </figure>
+                <figure class="contenedor__elemento-cinco">
+                    <picture class="contenedor__imagen">
+                        <source
+                            class="contenedor__tipoImagen contenedor__tipoImagen-superior"
+                            media="(max-width: 320px)"
+                            srcset="../assets/images/indian-wolf-s.jpg"
+                        />
+                        <source
+                            class="contenedor__tipoImagen contenedor__tipoImagen-superior"
+                            media="(max-width: 640px)"
+                            srcset="../assets/images/indian-wolf-m.jpg"
+                        />
+                        <img
+                            class="contenedor__tipoImagen contenedor__tipoImagen-inferior"
+                            src="../assets/images/indian-wolf-l.jpg"
+                            alt="El lobo indio"
+                        />
+                    </picture>
+                    <figcaption class="contenedor__nombre contenedor__nombre-inferior">El lobo indio</figcaption>
+                </figure>
+                <figure class="contenedor__elemento-seis">
+                    <picture class="contenedor__imagen">
+                        <source
+                            class="contenedor__tipoImagen contenedor__tipoImagen-superior"
+                            media="(max-width: 320px)"
+                            srcset="../assets/images/rad-wolf-s.jpg"
+                        />
+                        <source
+                            class="contenedor__tipoImagen contenedor__tipoImagen-superior"
+                            media="(max-width: 640px)"
+                            srcset="../assets/images/rad-wolf-m.jpg"
+                        />
+                        <img
+                            class="contenedor__tipoImagen contenedor__tipoImagen-inferior"
+                            src="../assets/images/rad-wolf-l.jpg"
+                            alt="El lobo Rad"
+                        />
+                    </picture>
+                    <figcaption class="contenedor__nombre contenedor__nombre-inferior">El lobo Rad</figcaption>
+                </figure>
+            </section>
+        </main>
+    </body>
+</html>
