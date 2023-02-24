@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+.cabecera {
+    &__titulo {
+        font: small-caps bold 2rem verdana;
+        text-align: center;
+        color: #0044ff;
+    }
+}
+main {
+    .apartado1,
+    .apartado2,
+    .apartado3,
+    .apartado4,
+    .apartado5,
+    .apartado6,
+    .apartado7,
+    .apartado8 {
+        font: normal 1rem verdana;
+        &__titulo {
+            font: bold 1.5rem verdana;
+            color: red;
+        }
+        &__pregunta {
+            margin-bottom: 1rem;
+        }
+    }
+    .apartado4 {
+        &__enlace {
+            display: block;
+            width: fit-content;
+        }
+        &__item {
+            width: 100%;
+            margin: 0;
+        }
+        &__imagen {
+            width: 100%;
+        }
+    }
+    .apartado5 {
+        &__contenedor {
+            max-width: 2520px;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 5px;
+        }
+        &__item {
+            width: 100%;
+            margin: 0;
+        }
+        &__item1 {
+            grid-row: 1 / span 1;
+            grid-column: 1 / span 1;
+        }
+        &__item2 {
+            grid-row: 1 / span 1;
+            grid-column: 2 / span 1;
+        }
+        &__item3 {
+            grid-row: 1 / span 1;
+            grid-column: 3 / span 1;
+        }
+        &__item4 {
+            grid-row: 1 / span 1;
+            grid-column: 4 / span 1;
+        }
+        &__item5 {
+            grid-row: 1 / span 1;
+            grid-column: 5 / span 1;
+        }
+        &__imagen {
+            width: 100%;
+        }
+        &__respuesta {
+            font: normal 0.8rem verdana;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    }
+    .apartado6 {
+        &__contenedor {
+            max-width: 1005px;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 5px;
+        }
+        &__item {
+            width: 100%;
+            margin: 0;
+        }
+        &__item1 {
+            grid-row: 1 / span 1;
+            grid-column: 1 / span 1;
+        }
+        &__item2 {
+            grid-row: 1 / span 1;
+            grid-column: 2 / span 1;
+        }
+        &__item3 {
+            grid-row: 1 / span 1;
+            grid-column: 3 / span 1;
+        }
+        &__item4 {
+            grid-row: 1 / span 1;
+            grid-column: 4 / span 1;
+        }
+        &__item5 {
+            grid-row: 1 / span 1;
+            grid-column: 5 / span 1;
+        }
+        &__imagen {
+            width: 100%;
+        }
+        &__respuesta {
+            font: normal 0.8rem verdana;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        &__resultado {
+            margin-top: 1rem;
+            font: normal 1rem verdana;
+            color: green;
+        }
+    }
+    .apartado8 {
+        &__contenedor {
+            max-width: 1005px;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 5px;
+            @media (max-width: 1005px) {
+                grid-template-rows: 4fr;
+                grid-template-columns: 1fr;
+            }
+        }
+        &__item {
+            width: 100%;
+            margin: 0;
+        }
+        &__item1 {
+            grid-row: 1 / span 1;
+            grid-column: 1 / span 1;
+        }
+        &__item2 {
+            grid-row: 1 / span 1;
+            grid-column: 2 / span 1;
+            @media (max-width: 1005px) {
+                grid-row: 2 / span 1;
+                grid-column: 1 / span 1;
+            }
+        }
+        &__item3 {
+            grid-row: 2 / span 1;
+            grid-column: 1 / span 1;
+            @media (max-width: 1005px) {
+                grid-row: 3 / span 1;
+                grid-column: 1 / span 1;
+            }
+        }
+        &__item4 {
+            grid-row: 2 / span 1;
+            grid-column: 2 / span 1;
+            @media (max-width: 1005px) {
+                grid-row: 4 / span 1;
+                grid-column: 1 / span 1;
+            }
+        }
+        &__descripcion {
+            font: normal 0.8rem verdana;
+        }
+    }
+}
