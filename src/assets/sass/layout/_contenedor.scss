@@ -1,0 +1,81 @@
+.contenedor {
+    max-width: 1024px;
+    margin: 0 auto;
+    @include grid(2, 3);
+    &__elemento-uno {
+        @include grid-item(1, 1);
+        @media (max-width: 320px) {
+            @include grid-item(1, 1);
+            position: relative;
+            top: 1rem;
+        }
+    }
+    &__elemento-dos {
+        @include grid-item(1, 2);
+        @media (max-width: 320px) {
+            @include grid-item(2, 1);
+        }
+    }
+    &__elemento-tres {
+        @include grid-item(1, 3);
+        @media (max-width: 320px) {
+            @include grid-item(3, 1);
+            position: relative;
+            top: -1rem;
+        }
+    }
+    &__elemento-cuatro {
+        @include grid-item(2, 1);
+        @media (max-width: 320px) {
+            @include grid-item(4, 1);
+            position: relative;
+            top: -0.8rem;
+        }
+    }
+    &__elemento-cinco {
+        @include grid-item(2, 2);
+        @media (max-width: 320px) {
+            @include grid-item(5, 1);
+            position: relative;
+            top: -1.8rem;
+        }
+    }
+    &__elemento-seis {
+        @include grid-item(2, 3);
+        @media (max-width: 320px) {
+            @include grid-item(6, 1);
+            position: relative;
+            top: -2.8rem;
+        }
+    }
+    &__imagen {
+        width: 100%;
+        z-index: 1;
+    }
+    &__tipoImagen {
+        width: 100%;
+    }
+    &__tipoImagen-superior {
+        position: relative;
+        top: 1.2rem;
+    }
+    &__nombre {
+        text-align: center;
+        font: normal 0.8rem $letraNombre;
+        background-color: transparent;
+        color: white;
+    }
+    &__nombre-superior {
+        position: relative;
+        top: -1rem;
+        z-index: 5;
+    }
+    &__nombre-inferior {
+        position: relative;
+        top: -2.3rem;
+        z-index: 5;
+    }
+    @media (max-width: 320px) {
+        @include grid(6, 1);
+    }
+}

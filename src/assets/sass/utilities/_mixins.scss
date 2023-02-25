@@ -1,0 +1,25 @@
+/*
+ * Mixin para la creación de un Gris Básico
+*/
+@mixin grid($filas, $columnas, $espacioFilas: 2px, $espacioColumnas: 2px) {
+    display: grid;
+    @if $filas==2 {
+        grid-template-rows: 1fr 1fr;
+    } @else {
+        grid-template-rows: 1fr;
+    }
+    @if $columnas==3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    } @else if $columnas==1 {
+        grid-template-columns: 1fr;
+    }
+    grid-row-gap: $espacioFilas;
+    grid-column-gap: $espacioColumnas;
+}
+/*
+ * Mixin para la creación de un Item de un Grid Básico
+*/
+@mixin grid-item($fila, $columna, $numeroFilas: 1, $numeroColumnas: 1) {
+    grid-row: $fila/span $numeroFilas;
+    grid-column: $columna / span $numeroColumnas;
+}
